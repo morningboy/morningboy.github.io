@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin');
+/* @import url('https://fonts.googleapis.com/css?family=Jua'); */
+
+:root {
+    --main: #292e33;
+    --primary:  #f5f5f5; 
+    --primary-lg: #485460;
+}
+
+
+::-webkit-scrollbar {
+  width: 0px;  /* remove scrollbar space */
+  background: transparent;  /* optional: just make scrollbar invisible */
+}
+
+body {
+  width: 100%;
+    margin: 9px 0;
+    padding: 0;
+    font-size: 1.2em;
+    color: #32393f;
+    /* font-family: 'Jua', sans-serif; */
+    font-family: 'Cabin', sans-serif; 
+    background-color: var(--primary); 
+    transition: background-color .5s;
+    
+}
+img {
+  width: 40%;
+}
+
+
+/* nav..> */
+.header { 
+  margin-bottom: 15px;
+    padding-top: 5px; 
+}
+.brand {
+    padding: 10px 17px;
+    font-size: 1.1em;
+    border-radius: 1px;
+    color: #d8e2e6;
+    background: var(--main);
+    box-shadow: #33d9b2 5px 5px;
+}
+
+.navbtn {
+  margin-bottom: 15px;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    /* border: #eee solid 2px; */
+    padding: 0px 4px;
+    /* border-radius: 3px; */
+    /* box-shadow: #19B5FE 3px 4px ; */
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #ecedee;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 22px;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #282b30;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+    background: #37c2d4;
+    padding: 10px 17px;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    font-size: 36px;
+    margin-left: 10px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+/* hn-nav */
+
+div.scrollmenu {
+    background-color:#dce0e4;
+    color: #1e272e;
+    padding-top: 12px;
+    box-shadow: #13212e5d 2px 2px 8px;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+div.scrollmenu a {
+  font-size: 0.9em;
+    display: inline-block;
+    color: #414a4d;
+    margin: 0 16px;
+    text-align: center;
+    padding: 12px 0 5px 0;
+    text-decoration: none;
+}
+div.scrollmenu a:first-child {
+  margin-left: 25px;
+}
+
+div.scrollmenu .active {
+  border-bottom:solid 2px #232729;
+  color: #272b2c;
+}
+
+  /* picks */
+ 
+.head_txt {
+  font-size: 1.6em;
+  margin: 52px 0px 0px 15px;
+  /* border: #283135 solid 2px; */
+  color: #313a3b;
+  /* text-shadow: #0c8cc7 2px 2px; */
+  display: inline-block;
+  border-radius: 2px;
+  padding: 5px 10px;
+  /* box-shadow: 5px 5px  #b83434 ; */
+}
+.picks {
+  margin: 15px 0 0px 0px;
+  overflow: auto;
+  overflow-y: hidden; 
+  white-space: nowrap;
+}
+.pick {
+  margin: 0 0 10px 5px;
+  padding: 8px 5px;
+  box-shadow: 0 5px 5px #32325a1a, 0 5px 10px #00000012;
+  color: #191d1d;
+  background-color: #dcdde1;
+  border-radius: 3px; 
+  display: inline-block;
+  width: 60%;
+}
+.pick:first-child{
+  margin-left: 18px; 
+}
+.pick img {
+  padding: 3px 0px 5px 8px;
+  margin: 0 auto;
+  width: 94%;
+}
+.pick p { 
+  white-space: initial;
+  padding: 0px 10px; 
+  width: 90%;
+  font-size: 0.9em;
+  font-weight: 500;
+}
+
+/* fact */ 
+.wut{
+  margin: 15px 15px 10px 15px;
+  
+}
+.wut .news_c {
+  margin: 0 -20px; 
+  background: var(--primary);
+  position: relative;
+  font-size: 0.9em;
+  padding: 5px 15px;
+  border-top: #a9b3b3 solid 2px;
+}
+.wut .news_c img {
+  width: 100px;
+  margin: 10px 10px 10px 15px;
+  box-shadow: #474d4df1 2px 2px;
+}
+.wut .news_c span {
+  color: #1e272e;
+  position: absolute;
+  top: 20px;
+  margin: 0 5px;
+  /* font-size: 1em; */
+}
+.fact {
+  padding: 10px 12px;
+  background: #e2eeee;
+  color: #1e272e;
+  border-radius: 1px; 
+  margin: 14px 1px;
+  box-shadow: #3293d4 6px 6px;
+  font-size: 1.2em;
+}
+.wut h2 {
+  font-size: 1.2em;
+  margin-bottom: 0;
+}
+/* quote */
+.quote {
+  font-size: 1em;
+  background: #e3e4e6;
+  color:#4b4542;
+  padding: 40px 20px;
+  margin: 20px 25px 40px 25px;
+  box-shadow: #475555 8px 8px ;
+  text-shadow:1px 1px 8px #3d484d ;
+}
+/* for special cards */
+.sp_news .paper {
+  margin: 10vh auto;
+  min-width: 25vw;
+  max-width: 70vh;
+  min-height: 10vh;
+  border-radius: 4px;
+  box-shadow: 0 15px 35px #32325a1a, 0 5px 15px #00000012;
+  transition: .6s ease;
+  background: #d8dfe2;
+  text-align: center;
+}
+
+.sp_news .paper:hover {
+  box-shadow: 0 18px 35px rgba(50, 50, 90, 0.1), 0 8px 15px rgba(0, 0, 0, 0.07);
+  transform: translateY(-1px);
+}
+
+.sp_news img {
+  width: 400px;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.sp_news .poster {
+  border-radius: 4px 4px 0 0;
+  margin-bottom: 2vh;
+}
+
+.sp_news h1 {
+  font-size: 1.6rem;
+  color: #414549;
+  letter-spacing: 1px;
+  margin: 2vh 4vw;
+  font-family: "Playfair Display", serif;
+}
+
+.sp_news h2 {
+  font-size: .2rem;
+  color: rgb(94, 98, 102);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.sp_news hr {
+  width: 20%;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+  border: 0;
+  border-bottom: 1px solid #779be7;
+}
+
+.sp_news p {
+  margin: 2vh 8vw;
+  text-align: center;
+  padding-bottom: 1vh;
+  color: #676e74;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: .9rem;
+  line-height: 1.25rem;
+}
+
+.sp_news .btn,
+.sp_news  a.btn {
+  display: inline-block;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+  line-height: 20px;
+  border-radius: 4px;
+  padding: 1vh 2vh;
+  letter-spacing: .02rem;
+  background: #7b74ac;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: .8rem;
+  box-shadow: 0 0px 0px #3033361a, 0 0px 0px #00000000;
+}
+
+.sp_news .btn,
+.sp_news a.btn:hover {
+  background: #ebeaf0;
+  color: #1b1f29;
+  box-shadow: 0 7px 14px rgba(48, 51, 54, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+  transform: translateY(-1px);
+}
+
+.sp_news .btn,
+.sp_news a.btn:active {
+  box-shadow: 0 4px 6px rgba(48, 51, 54, 0.1), 0 1px 3px rgba(0, 0, 0, 0.12);
+  transform: translateY(1px);
+}
+
+.sp_news .space {
+  height: 4vh;
+}
+
+/* <- Highlights -> */
+.mySlides, .poSlides {display: none}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 10px;
+  margin-top: -22px;
+  color: rgb(36, 33, 33);
+  background: #edecee79;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.3s ease;
+  border-radius: 0 8px 8px 0;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(37, 209, 221, 0.575);
+}
+.text {
+  color: #f2f2f2;
+  background: #2ca8ce;
+  width: 190px;
+  font-size: 14px;
+  padding: 8px 12px;
+  position: absolute;
+  left: 12%;
+  bottom: 8px;
+  width: 70%;
+  text-align: center;
+}
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.highlights img {
+  width: 300px;
+  padding: 25px 30px;
+  background-color: #e6ecee;
+  /* margin: 30px 25px 10px 0%; */
+}
+.highlights .dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.highlights .active, .highlights .dot:hover {
+  background-color: #115888;
+}
+
+.highlights .fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  margin: 0;
+  margin-top: 0px;
+  z-index: 10; 
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 40px;
+}

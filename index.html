@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>theNews</title>
+    <link rel="stylesheet" href="style.css">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123591767-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-123591767-1');
+</script>
+
+</head>
+<body>
+    <div class="header">
+        <div id="sidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        
+        <a href="#">Quik Dose</a>
+        
+        <a href="#">Wana Be a Part</a>
+        
+        <a href="#">About us</a>
+        
+        <a href="#">Contact us</a>
+        
+    </div>
+
+        <div id="main">
+            <span class="brand">theNews</span> <span class="navbtn" style="font-size:31px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        </div>
+</div>
+<div id="sm" class="scrollmenu">
+        <a href="#toppicks" id="to_n" class="active">Top_News</a>
+        <a href="#politics" id="po_n">Politics</a>
+        <a href="#international" id="in_n">International</a>
+        <a href="#tech" id="te_n">Tech</a>
+        <a href="#achievement" id="ac_n">Achivements</a>
+        <a href="#trending" id="tr_n">trending</a>
+        <a href="#comics" id="co_n">cOmics</a>
+</div>
+<div class="content">
+        
+<div id="toppicks">
+    <!-- picks -->
+    <h2 class="head_txt">Top Picks</h2>
+    <div class="picks">
+        <div class="pick">
+                <img src="https://timesofindia.indiatimes.com/thumb/msid-65182739,imgsize-536540,width-400,resizemode-4/65182739.jpg"
+                alt="" srcset="">
+                <p>Successful Indian captains in England</p>
+        </div>
+        <div class="pick">
+                <img src="https://timesofindia.indiatimes.com/thumb/msid-65180554,imgsize-81731,width-400,resizemode-4/65180554.jpg" alt="" srcset="">
+                <p>Ready to do business with Imran, India welcomes Pak polls </p>
+        </div>
+        <div class="pick">
+                <img src="https://www.deccanherald.com/sites/dh/files/styles/article_detail/public/article_images/2018/07/24/file715e1fj4jq8a5i3snqa1532433.jpg?itok=lvqt7ehi"
+                alt="" srcset="">
+                <p>Swedish firm Otivr to help Indian tech companies</p>
+        </div>
+        <div class="pick">
+                <img src="https://timesofindia.indiatimes.com/thumb/msid-65176948,imgsize-565643,width-400,resizemode-4/65176948.jpg"
+                alt="" srcset="">
+                <p>Women's Hockey World Cup: India face USA test in 'do-or-die' .</p>
+        </div>
+        <div class="pick">
+                <img src="https://www.hindustantimes.com/rf/image_size_960x540/HT/p2/2018/07/28/Pictures/india-daily-life_a365742a-928b-11e8-a4ad-b76a55df4e8b.jpg" alt="" srcset="">
+                <p>Smart farm technologies are here in India, but available to just a few</p>
+        </div>
+</div>
+
+<!--  -->
+
+<!-- facts -->
+<div class="wut">
+    <h2>Whats Up Today..></h2>
+    <hr>
+    <div class="news_c">
+        <img src="data:image/jpeg;base64,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" alt="" srcset="">
+        <span>India to probe whether Cambridge Analytica used Indian data</span>
+    </div>
+    <div class="news_c">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlkI_cTIItM6P0D93ekg97S2Vj-_oFo-hfjYdlO_Kq2KD4AKOt18EqVdYJEY_jhfe2KMsU0mk" 
+        alt="" srcset="">
+        <span>When Rahul says ‘Happy Birthday’ & turns India’s entire political science on its head</span>
+    </div>
+    <div class="news_c">
+        <img src="data:image/jpeg;base64,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" alt="" srcset="">
+        <span>Two Indian Women Aim To Fly The World In 90 Days In Their Tiny Plane</span>
+    </div>
+    <div class="news_c">
+            <img src="https://www.hindustantimes.com/rf/image_size_960x540/HT/p2/2018/07/28/Pictures/india-road-to-china_a09b83ea-9288-11e8-a4ad-b76a55df4e8b.jpg" alt="" srcset="">
+            <span>China moves troops to Doklam, Indian army says routine movement</span>
+    </div>
+    <div class="news_c">
+        <img src="https://timesofindia.indiatimes.com/thumb/msid-65182139,imgsize-37363,width-400,resizemode-4/65182139.jpg" alt="" srcset="">
+        <span>3 years after son's death, father to fill up 556th pothole</span>
+    </div> 
+    <!--<div class="news_c">
+                <img src="" alt="" srcset="">
+                <span></span>
+    </div> -->
+    <hr>
+</div>
+<div class="highlights">
+    <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="data:image/jpeg;base64,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"
+  >
+  <div class="text">The Economic Times Startup Awards: Celebrating the best in India’s startups</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="https://timesofindia.indiatimes.com/thumb/msid-65182739,imgsize-536540,width-400,resizemode-4/65182739.jpg"
+   >
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="https://timesofindia.indiatimes.com/thumb/msid-65182139,imgsize-37363,width-400,resizemode-4/65182139.jpg"
+  >
+  <div class="text">Caption Three</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+</div> 
+    <div class="quote">
+        "It's OK to have your eggs in one basket as long as you control what happens to that basket."
+    </div>
+</div>
+
+<!-- politics -->
+<div id="politics">
+            <!-- picks -->
+            <h2 class="head_txt">Political News</h2>
+            <div class="picks">
+                <div class="pick">
+                        <img src="https://timesofindia.indiatimes.com/thumb/msid-65182739,imgsize-536540,width-400,resizemode-4/65182739.jpg"
+                        alt="" srcset="">
+                        <p>Successful Indian captains in England</p>
+                </div>
+                <div class="pick">
+                        <img src="https://timesofindia.indiatimes.com/thumb/msid-65180554,imgsize-81731,width-400,resizemode-4/65180554.jpg" alt="" srcset="">
+                        <p>Ready to do business with Imran, India welcomes Pak polls </p>
+                </div>
+                <div class="pick">
+                        <img src="https://www.deccanherald.com/sites/dh/files/styles/article_detail/public/article_images/2018/07/24/file715e1fj4jq8a5i3snqa1532433.jpg?itok=lvqt7ehi"
+                        alt="" srcset="">
+                        <p>Swedish firm Otivr to help Indian tech companies</p>
+                </div>
+                <div class="pick">
+                        <img src="https://timesofindia.indiatimes.com/thumb/msid-65176948,imgsize-565643,width-400,resizemode-4/65176948.jpg"
+                        alt="" srcset="">
+                        <p>Women's Hockey World Cup: India face USA test in 'do-or-die' .</p>
+                </div>
+                <div class="pick">
+                        <img src="https://www.hindustantimes.com/rf/image_size_960x540/HT/p2/2018/07/28/Pictures/india-daily-life_a365742a-928b-11e8-a4ad-b76a55df4e8b.jpg" alt="" srcset="">
+                        <p>Smart farm technologies are here in India, but available to just a few</p>
+                </div>
+        </div>
+        
+        <!-- political wut -->
+        <div class="wut">
+            <!-- <h2>Whats Up Today..></h2> -->
+            <div class="sp_news">
+                <div class="paper"><img class="poster" src="https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/PD0XWZZSX5.jpg"/>
+                <h2>Political</h2>
+                <h1>The News Today.</h1>
+                <hr/>
+                <p>Down on the West Coast where the sand meets the crashing waves and your dreams come true.</p><a class="btn">Read More </a>
+                <div class="space"></div>
+                </div> 
+            </div>
+        
+            <hr>
+            <div class="news_c">
+                <img src="data:image/jpeg;base64,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" alt="" srcset="">
+                <span>India to probe whether Cambridge Analytica used Indian data</span>
+            </div>
+            <div class="news_c">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlkI_cTIItM6P0D93ekg97S2Vj-_oFo-hfjYdlO_Kq2KD4AKOt18EqVdYJEY_jhfe2KMsU0mk" 
+                alt="" srcset="">
+                <span>When Rahul says ‘Happy Birthday’ & turns India’s entire political science on its head</span>
+            </div>
+            <div class="news_c">
+                <img src="data:image/jpeg;base64,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" alt="" srcset="">
+                <span>Two Indian Women Aim To Fly The World In 90 Days In Their Tiny Plane</span>
+            </div>
+            <div class="news_c">
+                    <img src="https://www.hindustantimes.com/rf/image_size_960x540/HT/p2/2018/07/28/Pictures/india-road-to-china_a09b83ea-9288-11e8-a4ad-b76a55df4e8b.jpg" alt="" srcset="">
+                    <span>China moves troops to Doklam, Indian army says routine movement</span>
+            </div>
+            <div class="news_c">
+                <img src="https://timesofindia.indiatimes.com/thumb/msid-65182139,imgsize-37363,width-400,resizemode-4/65182139.jpg" alt="" srcset="">
+                <span>3 years after son's death, father to fill up 556th pothole</span>
+            </div> 
+            <!--<div class="news_c">
+                        <img src="" alt="" srcset="">
+                        <span></span>
+            </div> -->
+            <hr>
+        </div>
+</div>
+<!-- International -->
+<div id="international">
+    <!-- picks -->
+            <h2 class="head_txt">International News</h2>
+            <div class="picks">
+                <div class="pick">
+                        <img src="https://timesofindia.indiatimes.com/thumb/msid-65182739,imgsize-536540,width-400,resizemode-4/65182739.jpg"
+                        alt="" srcset="">
+                        <p>Successful Indian captains in England</p>
+                </div>
+                <div class="pick">
+                        <img src="https://timesofindia.indiatimes.com/thumb/msid-65180554,imgsize-81731,width-400,resizemode-4/65180554.jpg" alt="" srcset="">
+                        <p>Ready to do business with Imran, India welcomes Pak polls </p>
+                </div>
+                <div class="pick">
+                        <img src="https://www.deccanherald.com/sites/dh/files/styles/article_detail/public/article_images/2018/07/24/file715e1fj4jq8a5i3snqa1532433.jpg?itok=lvqt7ehi"
+                        alt="" srcset="">
+                        <p>Swedish firm Otivr to help Indian tech companies</p>
+                </div>
+                <div class="pick">
+                        <img src="https://timesofindia.indiatimes.com/thumb/msid-65176948,imgsize-565643,width-400,resizemode-4/65176948.jpg"
+                        alt="" srcset="">
+                        <p>Women's Hockey World Cup: India face USA test in 'do-or-die' .</p>
+                </div>
+                <div class="pick">
+                        <img src="https://www.hindustantimes.com/rf/image_size_960x540/HT/p2/2018/07/28/Pictures/india-daily-life_a365742a-928b-11e8-a4ad-b76a55df4e8b.jpg" alt="" srcset="">
+                        <p>Smart farm technologies are here in India, but available to just a few</p>
+                </div>
+        </div>
+        
+        <!-- political wut -->
+        <div class="wut">
+            <h2>Whats Up Today..></h2>
+            <hr>
+            <div class="news_c">
+                <img src="data:image/jpeg;base64,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" alt="" srcset="">
+                <span>India to probe whether Cambridge Analytica used Indian data</span>
+            </div>
+            <div class="news_c">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlkI_cTIItM6P0D93ekg97S2Vj-_oFo-hfjYdlO_Kq2KD4AKOt18EqVdYJEY_jhfe2KMsU0mk" 
+                alt="" srcset="">
+                <span>When Rahul says ‘Happy Birthday’ & turns India’s entire political science on its head</span>
+            </div>
+            <div class="news_c">
+                <img src="data:image/jpeg;base64,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" alt="" srcset="">
+                <span>Two Indian Women Aim To Fly The World In 90 Days In Their Tiny Plane</span>
+            </div>
+            <div class="news_c">
+                    <img src="https://www.hindustantimes.com/rf/image_size_960x540/HT/p2/2018/07/28/Pictures/india-road-to-china_a09b83ea-9288-11e8-a4ad-b76a55df4e8b.jpg" alt="" srcset="">
+                    <span>China moves troops to Doklam, Indian army says routine movement</span>
+            </div>
+            <div class="news_c">
+                <img src="https://timesofindia.indiatimes.com/thumb/msid-65182139,imgsize-37363,width-400,resizemode-4/65182139.jpg" alt="" srcset="">
+                <span>3 years after son's death, father to fill up 556th pothole</span>
+            </div> 
+            <!--<div class="news_c">
+                        <img src="" alt="" srcset="">
+                        <span></span>
+            </div> -->
+            <hr>
+        </div>
+</div>
+<!-- Tech -->
+<div id="tech">
+    <!-- picks -->
+    <h2 class="head_txt">Tech News</h2>
+    <div class="picks">
+        <div class="pick">
+                <img src="https://timesofindia.indiatimes.com/thumb/msid-65182739,imgsize-536540,width-400,resizemode-4/65182739.jpg"
+                alt="" srcset="">
+                <p>Successful Indian captains in England</p>
+        </div>
+        <div class="pick">
+                <img src="https://timesofindia.indiatimes.com/thumb/msid-65180554,imgsize-81731,width-400,resizemode-4/65180554.jpg" alt="" srcset="">
+                <p>Ready to do business with Imran, India welcomes Pak polls </p>
+        </div>
+        <div class="pick">
+                <img src="https://www.deccanherald.com/sites/dh/files/styles/article_detail/public/article_images/2018/07/24/file715e1fj4jq8a5i3snqa1532433.jpg?itok=lvqt7ehi"
+                alt="" srcset="">
+                <p>Swedish firm Otivr to help Indian tech companies</p>
+        </div>
+        <div class="pick">
+                <img src="https://timesofindia.indiatimes.com/thumb/msid-65176948,imgsize-565643,width-400,resizemode-4/65176948.jpg"
+                alt="" srcset="">
+                <p>Women's Hockey World Cup: India face USA test in 'do-or-die' .</p>
+        </div>
+        <div class="pick">
+                <img src="https://www.hindustantimes.com/rf/image_size_960x540/HT/p2/2018/07/28/Pictures/india-daily-life_a365742a-928b-11e8-a4ad-b76a55df4e8b.jpg" alt="" srcset="">
+                <p>Smart farm technologies are here in India, but available to just a few</p>
+        </div>
+</div>
+
+<!-- political wut -->
+<div class="wut">
+    <h2>Whats Up Today..></h2>
+    <hr>
+    <div class="news_c">
+        <img src="data:image/jpeg;base64,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" alt="" srcset="">
+        <span>India to probe whether Cambridge Analytica used Indian data</span>
+    </div>
+    <div class="news_c">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlkI_cTIItM6P0D93ekg97S2Vj-_oFo-hfjYdlO_Kq2KD4AKOt18EqVdYJEY_jhfe2KMsU0mk" 
+        alt="" srcset="">
+        <span>When Rahul says ‘Happy Birthday’ & turns India’s entire political science on its head</span>
+    </div>
+    <div class="news_c">
+        <img src="data:image/jpeg;base64,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" alt="" srcset="">
+        <span>Two Indian Women Aim To Fly The World In 90 Days In Their Tiny Plane</span>
+    </div>
+    <div class="news_c">
+            <img src="https://www.hindustantimes.com/rf/image_size_960x540/HT/p2/2018/07/28/Pictures/india-road-to-china_a09b83ea-9288-11e8-a4ad-b76a55df4e8b.jpg" alt="" srcset="">
+            <span>China moves troops to Doklam, Indian army says routine movement</span>
+    </div>
+    <div class="news_c">
+        <img src="https://timesofindia.indiatimes.com/thumb/msid-65182139,imgsize-37363,width-400,resizemode-4/65182139.jpg" alt="" srcset="">
+        <span>3 years after son's death, father to fill up 556th pothole</span>
+    </div> 
+    <!--<div class="news_c">
+                <img src="" alt="" srcset="">
+                <span></span>
+    </div> -->
+    <hr>
+</div>
+</div>
+<!-- Achievement -->
+<div id="achievement">
+    <!-- picks -->
+    <h2 class="head_txt">Political News</h2>
+    <div class="picks">
+        <div class="pick">
+                <img src="https://timesofindia.indiatimes.com/thumb/msid-65182739,imgsize-536540,width-400,resizemode-4/65182739.jpg"
+                alt="" srcset="">
+                <p>Successful Indian captains in England</p>
+        </div>
+        <div class="pick">
+                <img src="https://timesofindia.indiatimes.com/thumb/msid-65180554,imgsize-81731,width-400,resizemode-4/65180554.jpg" alt="" srcset="">
+                <p>Ready to do business with Imran, India welcomes Pak polls </p>
+        </div>
+        <div class="pick">
+                <img src="https://www.deccanherald.com/sites/dh/files/styles/article_detail/public/article_images/2018/07/24/file715e1fj4jq8a5i3snqa1532433.jpg?itok=lvqt7ehi"
+                alt="" srcset="">
+                <p>Swedish firm Otivr to help Indian tech companies</p>
+        </div>
+        <div class="pick">
+                <img src="https://timesofindia.indiatimes.com/thumb/msid-65176948,imgsize-565643,width-400,resizemode-4/65176948.jpg"
+                alt="" srcset="">
+                <p>Women's Hockey World Cup: India face USA test in 'do-or-die' .</p>
+        </div>
+        <div class="pick">
+                <img src="https://www.hindustantimes.com/rf/image_size_960x540/HT/p2/2018/07/28/Pictures/india-daily-life_a365742a-928b-11e8-a4ad-b76a55df4e8b.jpg" alt="" srcset="">
+                <p>Smart farm technologies are here in India, but available to just a few</p>
+        </div>
+</div>
+
+<!-- political wut -->
+<div class="wut">
+    <h2>Whats Up Today..></h2>
+    <hr>
+    <div class="news_c">
+        <img src="data:image/jpeg;base64,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" alt="" srcset="">
+        <span>India to probe whether Cambridge Analytica used Indian data</span>
+    </div>
+    <div class="news_c">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlkI_cTIItM6P0D93ekg97S2Vj-_oFo-hfjYdlO_Kq2KD4AKOt18EqVdYJEY_jhfe2KMsU0mk" 
+        alt="" srcset="">
+        <span>When Rahul says ‘Happy Birthday’ & turns India’s entire political science on its head</span>
+    </div>
+    <div class="news_c">
+        <img src="data:image/jpeg;base64,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" alt="" srcset="">
+        <span>Two Indian Women Aim To Fly The World In 90 Days In Their Tiny Plane</span>
+    </div>
+    <div class="news_c">
+            <img src="https://www.hindustantimes.com/rf/image_size_960x540/HT/p2/2018/07/28/Pictures/india-road-to-china_a09b83ea-9288-11e8-a4ad-b76a55df4e8b.jpg" alt="" srcset="">
+            <span>China moves troops to Doklam, Indian army says routine movement</span>
+    </div>
+    <div class="news_c">
+        <img src="https://timesofindia.indiatimes.com/thumb/msid-65182139,imgsize-37363,width-400,resizemode-4/65182139.jpg" alt="" srcset="">
+        <span>3 years after son's death, father to fill up 556th pothole</span>
+    </div> 
+    <!--<div class="news_c">
+                <img src="" alt="" srcset="">
+                <span></span>
+    </div> -->
+    <hr>
+</div>
+</div>
+
+<!-- Trending -->
+<div id="trending">
+    <!-- picks -->
+            <h2 class="head_txt">Trending_News</h2>
+            <div class="picks">
+                <div class="pick">
+                        <img src="https://timesofindia.indiatimes.com/thumb/msid-65182739,imgsize-536540,width-400,resizemode-4/65182739.jpg"
+                        alt="" srcset="">
+                        <p>Successful Indian captains in England</p>
+                </div>
+                <div class="pick">
+                        <img src="https://timesofindia.indiatimes.com/thumb/msid-65180554,imgsize-81731,width-400,resizemode-4/65180554.jpg" alt="" srcset="">
+                        <p>Ready to do business with Imran, India welcomes Pak polls </p>
+                </div>
+                <div class="pick">
+                        <img src="https://www.deccanherald.com/sites/dh/files/styles/article_detail/public/article_images/2018/07/24/file715e1fj4jq8a5i3snqa1532433.jpg?itok=lvqt7ehi"
+                        alt="" srcset="">
+                        <p>Swedish firm Otivr to help Indian tech companies</p>
+                </div>
+                <div class="pick">
+                        <img src="https://timesofindia.indiatimes.com/thumb/msid-65176948,imgsize-565643,width-400,resizemode-4/65176948.jpg"
+                        alt="" srcset="">
+                        <p>Women's Hockey World Cup: India face USA test in 'do-or-die' .</p>
+                </div>
+                <div class="pick">
+                        <img src="https://www.hindustantimes.com/rf/image_size_960x540/HT/p2/2018/07/28/Pictures/india-daily-life_a365742a-928b-11e8-a4ad-b76a55df4e8b.jpg" alt="" srcset="">
+                        <p>Smart farm technologies are here in India, but available to just a few</p>
+                </div>
+        </div>
+        
+        <!-- political wut -->
+        <div class="wut">
+            <h2>Whats Up Today..></h2>
+            <hr>
+            <div class="news_c">
+                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAGQAZAMBIgACEQEDEQH/xAAbAAABBQEBAAAAAAAAAAAAAAAAAQIDBAUGB//EADcQAAIBAwMCBAQDBgcBAAAAAAECAwAEEQUSIRMxBiJBURRhcZEjMoEHFVKCscFCU2JjcrLwM//EABkBAQEBAQEBAAAAAAAAAAAAAAEAAgMEBf/EAB4RAQEBAAAHAQAAAAAAAAAAAAABEQIDEhMhMTJR/9oADAMBAAIRAxEAPwDvPiIXjLxOZQshjbp+hHcUzfK8YKW+wn1lPauIv/2oWkYZdNsJH5zuchAT74HNczqH7Qdeu8iGSG1U/wCUmT9zmvROC1zyvW7gK0QMs/TAHm2nA9PWufvfFPh7TWbqagksvqsZMh+y8V5FeXt3fsWvbqa4P+65aq4HyrU5X6cehXv7S7aLcNL0t2P8cxCA/oMmucv/AB1r95kJcR2o9reMA/c5NYGABzwKNgrXRGiXV1dXj77u5mnb3kkLf1qDFTFQM00rRhR4oxT9tAWrAbj5UYp+KXFGJHilp+KKsSULS7afilxXbGTNtbGlWlhbFrjXEd4gAqwIdrZbsxPpgZOO/H0zJbWEMNnazx3cD39znZA6t+EM4B7HJODil1fTvg2jtZ762LBRK7K7PvduScgH0wP0+dSQ2FzJYah1PhrRHtMu34e4ZHA/NnuSPvUUt0bxt2LaKdu6mCPY5+RI8p+R4+Y7VoJBZSaQD8S8t2ziIRIuzqIgB4Zh38w+oUADNZ0UkhnSG3jW2LNtJQHeP5jz9sfSoxNf9a2todO1CyEe1jKzLAI5FZh24ABGMce571lT25jUOrCSInAde2fY+x+RrSuLye7Mtws8wkViThyCyE8H9O30x7Va0y+nt+ok08hFzA6uGOdsZU88+vr9B86C5zbRtqeWFopGjYYKEg/UUwCjEZijFPxSEUWIzFLS4paEsBacqFmC5AycZJwB9aXFGK7stzX7WTSrgwRDeNix/EocqV2jyqR2+fqf65ZXrWSN/itzs4/gJyPsc/cVd0eSOU/DXN98GqqSk5UsMd9hX1B9PaprEaZJcBby5jt0kGyRoY32lT6lSO4ODx7Dis+ky7xSDDCAfJGo2/6m8x/7Y/StGwSHqONUZhKkTdMxkbwx8o3k8Yyw78jj0p2oLFHdSG0uYQZSXErBwzAn/CduFH0OfQn0qOPR70WN3KYowgVQfxk5BYHtntxVVFawlggvUc2gcRbmdZ2LAgA5GBj045zViyto7+4urrPSRYpJJkc4ABB4Rv1wAefrT0tI2sJby4uIULMsTKsgZmP5t3lzjOBz7g1Umkj6LqsqtuAVURSFQZBPf6DnvRiqnOxmleV/zOcnFQMuKsEU1lyKbEgxTSKkIphFZJuKKdiijCs4xSilPNFdWAKUAigU4UpJDc3EKFIpnRSckKcUwMwkEgYiQHO7POfrRRQV2xEF1cdG4lS26o2vKRhD6gn2OcfL09c1QIwSAQcHuPWgirw05pLt4oJkaJEEjTyKY1CkDk55xk4Hvxij0lDFJgkgAcn0rornS7aJ1uGUS28dgkzLbycSsCEOD6DPJ4q1Yw2SfCXUcMlo1zaSLEFkG7qK3O1m4BKnAJovEHHyIQcEEH5iojW94lfqXcW9AsiwhXBm6r8E43sBgtj+1YjDFBR0U6igrFLRitTR7K3kgu76+Dva2irmNGw0jscKufQe5rprDMFOrRaa1v7q1ih0pYcyBWS3lbMoJGB5s4PzrcRLC1lhvreK2WbT7yNLlIC7II2ypBLcMQfUUdSYMOkX0gDvF8NEVDdW5PTTB7cnvn5VfNlbW2mSfvKBviLK6aJoomCmTcAVy2DwMPz9KZf3DJDrGn3ty8kiXSyQ72J3MGKt91Of0pn76JLhLaKVriCGOVZ13Kzx8bvt/WjyVuNIbKyvJ7CL8SS1iubdnAaSEFzHIAcfM8/rVb461azt452YrLZrbzdPlozG+UbB78YGPaqGpS3Xxky3Q6ckf4LIg2qgXjYAOMDFWjpiW+my3M8/Su7eYKYgN/ddyZxwMkHnJo8I86tDC9lHZrcRxWu8dYMBJIGwTxyBznjmm30l3rSAWlrcywwlnZ287EnGSSAAOAMAdquPbGM315bxLeXD9GWMSRB8JINxfZjB547cVl6vc3Gm2IdJhb6gt2JDEMYiUrnyp+UHPf1GBRxWSamZjHpikYZrJe9uXdmMzEsSScCuh8NeGtV8SCJbHULNJpeqVhlYhtse3cxwpwPOMZ78+1cu9GsUCOaK6bQ/Ac+q2K3Z8QxKrny9C26oxgHkllIIzgjHBFFHe4TjBrS0e+gtkurW+ikks7pAJOmRuQqcqwz7e3zrNor0ubVkutPsoz+6+tLcFlYXU6heltOfIozzxyfajWLrUw3w99GLVZF6jQxxiNXzzuIXueB39qoWcBubqC3XvLIqcfM4/vXUarJp99Nd2d1qUTyvcO9q6odlvnPlZzjynA4HY80VMb9yXgjYyGFJhGZRbvIOq6AZLBfbGT+hq1a6XaXFmsZVkupbdpYXknG52ALYWMD8vBGSR2zUMmppHqGmXyATSQW6RzpnG5lypGfmuPvVdNXu0hijiMcbRRiJZkQCXYOy7vajyWpLMt3exW86s1vqcUU3lGTFKRt3j+YEH3FU7nUY01LVVlgFxb3MxyvUK/lYlSCP/YNZcM80DboJZI227co5U49uPSmCmRJ3vLhmiYSMjRRiJGQlSFBJxkfWsnWD+AGYn8+Se+eKvmqGr5FupU4O/g+3FZ5nzVPbW1PwdDoc2k23iDVvgrnUYuqVW26iWqnGOo28evBwMDBOTW5+yWxvdH8TQahf2NwsN7p83wpSPeZxlMsuPQZHfHcVcfx34b1fXdK1nW7fIgsHtryymsxMrP3VkJBGMk98EVLo/j7w/CfDlzdSXEMmm213BLClrkHqbdpXbxjy9vTNeB0QeA9VsfDekTwarcfDtdXLXMGVx1ImVQr4PIB2nvRWNLc+DZLWwCTiOZLVEufidOednlGdxDZ/L2wB2AoqTJpaKK+i5Jba4ktbiO4gbbLEwZDjODURoopQooooJTQKSipFNUdW/wDgv/P+1FFY5nzVGTRRRXjdCUtFFCf/2Q==" alt="" srcset="">
+                <span>India to probe whether Cambridge Analytica used Indian data</span>
+            </div>
+            <div class="news_c">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlkI_cTIItM6P0D93ekg97S2Vj-_oFo-hfjYdlO_Kq2KD4AKOt18EqVdYJEY_jhfe2KMsU0mk" 
+                alt="" srcset="">
+                <span>When Rahul says ‘Happy Birthday’ & turns India’s entire political science on its head</span>
+            </div>
+            <div class="news_c">
+                <img src="data:image/jpeg;base64,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" alt="" srcset="">
+                <span>Two Indian Women Aim To Fly The World In 90 Days In Their Tiny Plane</span>
+            </div>
+            <div class="news_c">
+                    <img src="https://www.hindustantimes.com/rf/image_size_960x540/HT/p2/2018/07/28/Pictures/india-road-to-china_a09b83ea-9288-11e8-a4ad-b76a55df4e8b.jpg" alt="" srcset="">
+                    <span>China moves troops to Doklam, Indian army says routine movement</span>
+            </div>
+            <div class="news_c">
+                <img src="https://timesofindia.indiatimes.com/thumb/msid-65182139,imgsize-37363,width-400,resizemode-4/65182139.jpg" alt="" srcset="">
+                <span>3 years after son's death, father to fill up 556th pothole</span>
+            </div> 
+            <!--<div class="news_c">
+                        <img src="" alt="" srcset="">
+                        <span></span>
+            </div> -->
+            <hr>
+        </div>
+</div>
+<!-- comic -->
+<div id="comics">
+    <h2 class="head_txt">CoMics</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo repellat, dolorum aspernatur molestiae excepturi recusandae facere adipisci exercitationem minus iusto similique rerum inventore error earum unde dicta atque ullam provident.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo repellat, dolorum aspernatur molestiae excepturi recusandae facere adipisci exercitationem minus iusto similique rerum inventore error earum unde dicta atque ullam provident.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo repellat, dolorum aspernatur molestiae excepturi recusandae facere adipisci exercitationem minus iusto similique rerum inventore error earum unde dicta atque ullam provident.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo repellat, dolorum aspernatur molestiae excepturi recusandae facere adipisci exercitationem minus iusto similique rerum inventore error earum unde dicta atque ullam provident.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo repellat, dolorum aspernatur molestiae excepturi recusandae facere adipisci exercitationem minus iusto similique rerum inventore error earum unde dicta atque ullam provident.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo repellat, dolorum aspernatur molestiae excepturi recusandae facere adipisci exercitationem minus iusto similique rerum inventore error earum unde dicta atque ullam provident.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo repellat, dolorum aspernatur molestiae excepturi recusandae facere adipisci exercitationem minus iusto similique rerum inventore error earum unde dicta atque ullam provident.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo repellat, dolorum aspernatur molestiae excepturi recusandae facere adipisci exercitationem minus iusto similique rerum inventore error earum unde dicta atque ullam provident.</p>
+</div>
+</div>
+<div class="footer">
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
